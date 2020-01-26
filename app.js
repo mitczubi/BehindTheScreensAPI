@@ -24,14 +24,8 @@ mongoose.Promise = global.Promise;
 
 const port = process.env.PORT || 7066;
 
-app.get('/', (req, res) => {
-  res.status(200).json({
-    message: 'Welcome to Behind the Screens'
-  });
-});
-
 // Set up routes
-homeRoute(app)
+homeRoute(app);
 app.use('/api/', mainRoutes);
 
 app.get('*', (req, res) => {
