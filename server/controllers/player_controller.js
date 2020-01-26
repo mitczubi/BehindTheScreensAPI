@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const PlayerCharacter = require('../models/player_controller');
+const PlayerCharacter = require('../models/player_character');
 
 exports.createPlayerCharacter = (req, res) => {
   const player_character = new PlayerCharacter({

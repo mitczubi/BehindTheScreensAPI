@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-const playerControllerSchema = new mongoose.Schema({
+const playerCharacterSchema = new mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
   name: {
     type: String,
@@ -18,4 +18,4 @@ const playerControllerSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('PlayerController', playerControllerSchema);
+module.exports = mongoose.model('PlayerCharacter', playerCharacterSchema);
