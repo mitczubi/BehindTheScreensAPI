@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGODB, { useUnifiedTopology: true, useNewUrlParse
 
 mongoose.Promise = global.Promise;
 
-const port = process.env.PORT || 7066;
+const port = process.env.PORT || 3000;
 
 // Set up routes
 homeRoute(app);
